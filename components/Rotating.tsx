@@ -7,7 +7,7 @@ function Rotating() {
     const rotate = useTransform(scrollYProgress, [0, 1], [40, 0]);
 
     return (
-        <m.div className='absolute m-auto -top-[400px] md:-top-[600px] lg:-top-[1000px]' style={{ rotate: rotate }}>
+        <m.div className='absolute m-auto -top-[400px] md:-top-[600px] lg:-top-[800px]' style={{ rotate: rotate }}>
             <Image className='' src='/wheel.png' alt="stamp" width={5000} height={5000} />
         </m.div>
     )
