@@ -3,7 +3,7 @@ import ArticleHero from "@/components/ArticleHero"
 import { motion as m } from "framer-motion";
 
 
-const Contact = () => {
+const page = () => {
     return (
         <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
             transition={{ duration: 0.75, ease: 'easeOut' }}>
@@ -13,4 +13,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default page
