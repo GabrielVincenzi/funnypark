@@ -1,113 +1,71 @@
-import Image from "next/image";
+'use client';
+import TextLeft from "@/components/TextLeft";
+import TextRight from "@/components/TextRight";
+import Hero from "@/components/Hero";
+import Carousel from "@/components/Carousel";
+import { motion as m } from "framer-motion";
+import Rotating from "@/components/Rotating";
+
+
+const dataData = [
+  {
+    title: 'Bilancio dello Stato',
+    description: "Ogni giorno sentiamo discutere di come spendere le risorse del Paese, dove c'è carenza e dove c'è spreco, ma nel concreto come funziona il bilancio dello Stato?",
+    link: '/gov_exp',
+  },
+  {
+    title: "L'Entrata nell'Euro",
+    description: "In Italia i prezzi sono veramente raddoppiati con l'entrata nell'Euro? Sfatiamo il mito della catastrofe inflazionistica.",
+    link: '/lira_infl',
+  },
+  {
+    title: 'Demografia italica',
+    description: "Uno dei mostri nell'armadio azzurro che corrode il nostro futuro giorno dopo giorno distruggendo ogni parvenza di giustizia intergenerazionale.",
+    link: '/demo',
+  },
+  {
+    title: "Chi possiede l'Informazione?",
+    description: 'Siamo abituati a leggere il nome della Testata giornalistica e del Direttore, ma di chi è la proprietà, chi possiede i giornali? Sono veramente tanto liberi quanto pensiamo?',
+    link: '/journalism',
+  }
+]
+
+const dataText = [
+  {
+    title: 'Patrimoniale e Catasto',
+    description: "Una riforma della tassa sul patrimonio non può agire da sola, deve essere accompagnata da una riscrittura del sistema catastale e probabilmente anche una rilettura del federalismo regionale.",
+    link: '/patr_tax',
+  },
+  {
+    title: "Chi possiede l'Informazione?",
+    description: 'Siamo abituati a leggere il nome della Testata giornalistica e del Direttore, ma di chi è la proprietà, chi possiede i giornali? Sono veramente tanto liberi quanto pensiamo?',
+    link: '/journalism',
+  }
+]
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+      transition={{ duration: 0.75, ease: 'easeOut' }}>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <Hero title="Funny Park" description="Un modo diverso di vedere ciò che ci circonda." />
+      <Rotating />
+      <Carousel title="Dati alla Mano" data={dataData} />
+      <TextRight title="Informazione è Libertà Collettiva." image="/G1.png"
+        description="Siamo ormai sommersi dall'informazione, dalle notizie, dalla comunicazione. Abbiamo superato il periodo storico dell'informazione
+        per la sola elite e siamo approdati nell'informazione condivisa, ma c'è un prezzo: capire quale sia quella vera. Oggi il problema 
+        più intenso e sentito nella quotidianità è discernere la verità dalla menzogna, anche se raccontata bene, proprio perchè sapere è libertà,
+        è emancipazione, è progresso, è civiltà. Informare nel migliore dei modi deve essere l'obiettivo primo in quanto costruisce le basi 
+        per il pensiero critico e per una vita senza le catene della mediocrità e del populismo. " />
+      <TextLeft title="Complessità alla portata di tutti." image="/G2.png"
+        description="Complesso. Parola scomparsa nel dibattito, ma oramai più che attuale. Ci vengono presentate risposte semplici 
+        a problemi semplici in realtà astronomicamente complessi senza nemmeno preoccuparsi delle sfaccettature della realtà e della totale 
+        irresponsabilità di tali affermazioni. La semplicità viene venduta come l'unico modo in cui l'informazione può raggiungere i non 
+        addetti ai lavori, ma questo riduce solo in cenere la bellezza della vera dialettica. Spiegare la complessità, rendere comprensibile 
+        il difficile è il punto focale di ogni articolo che si rispetti. Qui si cerca proprio di fare questo: semplificare senza perdere 
+        di rigore e dettaglio, un quadro ampio di problemi complessi alla portata di tutti." />
+      <Carousel title="Articoli" data={dataText} />
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </m.div>
   );
 }
