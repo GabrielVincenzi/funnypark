@@ -34,7 +34,7 @@ ChartJS.register(
     Filler,
 );
 
-export const options = {
+const options = {
     responsive: true,
     plugins: {
         legend: {
@@ -46,7 +46,7 @@ export const options = {
     },
 };
 
-export const dataA = {
+const dataA = {
     labels: [
         "L'Avvenire", "Il Corriere Della Sera", "Il Fatto Quotidiano", "La Gazzetta Sport", "Il Giornale",
         "Libero", "Il Manifesto", "Il Mattino", "Il Messaggero", "La Repubblica", "Il Sole 24 Ore", "La Stampa", "Tempo", "Verità"

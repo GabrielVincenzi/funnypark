@@ -31,7 +31,7 @@ ChartJS.register(
     Filler,
 );
 
-export const options = {
+const options = {
     responsive: true,
     plugins: {
         legend: {
@@ -43,7 +43,7 @@ export const options = {
     },
 };
 
-export const dataA = {
+const dataA = {
     labels: [
         "1971-Q1", "1971-Q2", "1971-Q3", "1971-Q4",
         "1972-Q1", "1972-Q2", "1972-Q3", "1972-Q4",
@@ -145,7 +145,7 @@ export const dataA = {
     ],
 };
 
-export const dataB = {
+const dataB = {
     labels: [1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965,
         1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976,
         1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987,
@@ -168,7 +168,7 @@ export const dataB = {
 };
 
 
-export default function GovExpenditure() {
+export function GovExpenditure() {
     return (
         <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
             transition={{ duration: 0.75, ease: 'easeOut' }}>

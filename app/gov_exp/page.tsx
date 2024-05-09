@@ -32,7 +32,7 @@ ChartJS.register(
     Filler,
 );
 
-export const options = {
+const options = {
     responsive: true,
     plugins: {
         legend: {
@@ -44,7 +44,7 @@ export const options = {
     },
 };
 
-export const dataA = {
+const dataA = {
     labels: [
         2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
         2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021
@@ -107,7 +107,7 @@ export const dataA = {
     ],
 };
 
-export const dataB = {
+const dataB = {
     labels: ['Transazioni sul Debito', 'Difesa', 'Salute', 'Educazione', 'Protezione Sociale', 'Affari Economici', 'Ricerca Base', 'Giustizia', 'Pubblica Amm.', 'Ambiente'],
     datasets: [
         {
@@ -131,7 +131,7 @@ export const dataB = {
     ],
 };
 
-export const dataC = {
+const dataC = {
     labels: ['Transazioni sul Debito', 'Ambiente', 'Salute', 'Istruzione', 'Protezione Sociale', 'Pensioni', 'Disoccupazione', 'Ricerca Base'],
     datasets: [
         {
@@ -157,7 +157,7 @@ export const dataC = {
     ],
 };
 
-export const dataD = {
+const dataD = {
     labels: [
         1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004,
         2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014,

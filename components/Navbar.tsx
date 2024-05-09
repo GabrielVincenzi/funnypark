@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { NAV_LINKS } from "@/constants"
 
 function Navbar() {
@@ -19,4 +18,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navbar;
