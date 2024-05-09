@@ -168,7 +168,7 @@ const dataB = {
 };
 
 
-export function GovExpenditure() {
+export function page() {
     return (
         <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
             transition={{ duration: 0.75, ease: 'easeOut' }}>
