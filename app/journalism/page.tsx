@@ -76,7 +76,7 @@ const page = () => {
                 <Bar options={options} data={dataA} />
             </div>
 
-            <div className="lg:px-10 max-container padding-container flex flex-col gap-4 py-10 pb-10  lg:py-20">
+            <div className="lessgap_container">
                 <h2>Big Players della Comunicazione.</h2>
                 <p className="description">
                     L'informazione è un tema spigoloso, specialmente in questo periodo in cui giornali e giornalisti vedono alcune
