@@ -17,7 +17,7 @@ const page = () => {
              sulle preferenze di investimento del cittadino." />
 
 
-            <div className="lg:px-10 max-container padding-container flex flex-col gap-4 py-5 pb-10  lg:py-10">
+            <div className="textarticle_container">
                 <h2>La Tassazione sugli Immobili.</h2>
                 <p className="description">
                     Una più ingente tassazione sugli immobili darebbe la <b>possibilità di respirare ai lavoratori</b> nella forma
@@ -34,7 +34,7 @@ const page = () => {
                     di redistribuzione della ricchezza e non solo dell’amministrazione.
                 </p>
             </div>
-            <div className="lg:px-10 max-container padding-container flex flex-col gap-4 py-5 pb-10  lg:py-10">
+            <div className="textarticle_container">
                 <h2>Il Calcolo del Valore degli Immobili.</h2>
                 <p className="description">
                     Esistono diversi metodi di calcolo del valore di un immobile, e quindi della <b>base imponibile</b> di un’imposta sugli immobili,
@@ -51,7 +51,7 @@ const page = () => {
 
                 </p>
             </div>
-            <div className="lg:px-10 max-container padding-container flex flex-col gap-4 py-5 pb-10  lg:py-10">
+            <div className="textarticle_container">
                 <h2>Toccare il Catasto: revisione della struttura Federale.</h2>
                 <p className="description">
                     Tassare gli immobili necessariamente impone una <b>revisione della struttura federale</b> italiana, considerato che una migliore
