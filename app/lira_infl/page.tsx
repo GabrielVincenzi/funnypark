@@ -177,7 +177,7 @@ export default function page() {
                         non diamo il giusto peso alle parole. Oggi cercheremo di dare un quadro generale e allo stesso tempo specifico, del sistema Stato e
                         di come questo raccolga e sfrutti le risorse."/>
 
-            <div className="lg:px-10 max-container padding-container flex flex-col gap-4 py-10 pb-10 lg:py-20">
+            <div className="lessgap_container">
                 <h2 className="lg:bold-52">Cambio tra Valuta Nazionale ed ECU.</h2>
                 <p className="description lg:pr-40">
                     Il Consiglio Europeo ha stabilito il tasso di cambio tra tutte le valute nazionali della futura Eurozona
@@ -196,7 +196,7 @@ export default function page() {
                 <Line options={options} data={dataA} />
 
             </div>
-            <div className="lg:px-10 max-container padding-container flex flex-col gap-4 py-10 pb-10  lg:py-20">
+            <div className="lessgap_container">
                 <h2 className="lg:bold-52">Svalutare di più ci avrebbe salvati?</h2>
                 <p className="description">
                     I manuali di macroeconomia insegnano che la svalutazione della moneta nazionale porta ad un aumento delle
