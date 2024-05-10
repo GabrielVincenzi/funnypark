@@ -200,7 +200,7 @@ export default function page() {
                         non diamo il giusto peso alle parole. Oggi cercheremo di dare un quadro generale e allo stesso tempo specifico, del sistema Stato e
                         di come questo raccolga e sfrutti le risorse."/>
 
-            <div className="lg:px-10 max-container padding-container flex flex-col gap-4 py-10 pb-10  lg:py-20">
+            <div className="lessgap_container">
                 <h2>Entrate e Uscite.</h2>
                 <p className="description">
                     Lo Stato non è una scatola chiusa incomprensibile, per questo possiamo cercare di capire come funzione. Pensiamo per esempio
