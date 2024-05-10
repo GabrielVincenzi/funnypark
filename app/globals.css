@@ -91,11 +91,11 @@ h3 {
   }
 
   .outer_container {
-    @apply px-10 max-container padding-container flex flex-col gap-20 py-10 pb-10 md:gap-28 lg:py-20 xl:flex-row
+    @apply px-10 lg:px-20 max-container padding-container flex flex-col gap-20 py-10 pb-10 md:gap-28 lg:py-20 xl:flex-row
   }
 
   .graph_container {
-    @apply px-10 max-container padding-container flex flex-col gap-0 pb-10 md:gap-28 xl:flex-row
+    @apply px-10 lg:px-20 max-container padding-container flex flex-col gap-0 pb-10 md:gap-28 xl:flex-row
   }
 
   .max-container {
