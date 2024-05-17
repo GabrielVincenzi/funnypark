@@ -32,7 +32,7 @@ const dataData = [
 
 const dataText = [
   {
-    title: 'Patrimoniale e Catasto',
+    title: 'Patrimoniale: tassa intergenerazionale',
     description: "Una riforma della tassa sul patrimonio non può agire da sola, deve essere accompagnata da una riscrittura del sistema catastale e probabilmente anche una rilettura del federalismo regionale.",
     link: '/patr_tax',
   },
